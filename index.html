@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopzo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">🛒Shopzo</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart 🛒 (<span id="cart-count">0</span>)</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </nav>
+  </header>
+  <section id="home" class="section home">
+    <h1 class="name">Welcome to <span class="span">Shopzo</span></h1>
+    <p class="name">More choices, better value.!</p>
+  </section>
+  <section id="shop" class="section shop">
+    <h2 class="name" style="font-size: 35px;">Shop Now</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="mens clothing.jpg" alt="Product 1">
+        <h3>Shirt</h3>
+        <p>₹499</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="men jeans.jpg" alt="Product 2">
+        <h3>Denim Jeans</h3>
+        <p>₹899</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="wireless earbuds.jpg" alt="Product 3">
+        <h3>Bluetooth Earbuds</h3>
+        <p>₹999</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="iphone 17 pro max.jpg" alt="Product 4">
+        <h3>Iphone 17 pro max</h3>
+        <p>₹1,34,900</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Dumbells.jpg" alt="Product 5">
+        <h3>Dumbells 3kg</h3>
+        <p>₹3,999</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="bluetooth speaker.jpg" alt="Product 6">
+        <h3>JBL speaker</h3>
+        <p>₹1,499</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="cart" class="section cart">
+    <h2 class="name">Your Cart</h2>
+    <div id="cart-items"></div>
+    <p id="total-price" class="name">Total: ₹0.00</p>
+  </section>
+  <section id="about" class="section about">
+    <h2 class="name">About Us</h2>
+    <p class="name">We offer the best products at unbeatable prices. Trusted by thousands of happy customers!</p>
+  </section>
+  <section id="contact" class="section contact">
+    <h2 class="name">Contact Us</h2>
+    <p class="name">Send us your message below:</p>
+
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <p>Email: shopzo@gmail.com</p>
+    <p>Phone: +91 9113686274</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Shopzo | All Rights Reserved</p>
+  </footer>
+
+  <script src="style.js"></script>
+</body>
+</html>
